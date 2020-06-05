@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="Colorful.css">
+  <style type="text/css">
+    *{
+      margin: 0;
+    }
+    .bg-grey{
+      background-color: #4d7ed6;
+      height: 60px;
+      margin:10px;
+    }
+    div{
+      color: white;
+    }
+    .flex{
+      background-color: #c9d7f1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 固定尺寸  -->
+    <div class="col-12 bg-grey flex align-center justify-center ">
+      <span>固定尺寸</span>
+    </div>
+    <div class="flex">
+      <div class="basis-xs bg-grey">basis-xs</div>
+    </div>
+    <div class="flex">
+      <div class="basis-sm bg-grey">basis-sm</div>
+    </div>
+    <div class="flex">
+      <div class="basis-df bg-grey">basis-df / basis</div>
+    </div>
+     <div class="flex">
+      <div class="basis-lg bg-grey">basis-lg</div>
+    </div>
+     <div class="flex">
+      <div class="basis-xl bg-grey">basis-xl</div>
+    </div>
+
+    <!-- 比例布局 -->
+    <div class="col-12 bg-grey flex align-center justify-center ">
+      <span>比例布局</span>
+    </div>
+    <div class="flex">
+      <div class="flex-sub bg-grey">flex-sub</div>
+      <div class="flex-twice bg-grey">flex-twice</div>
+      <div class="flex-treble bg-grey">flex-treble</div>
+    </div>
+
+    <!-- 水平对齐 -->
+    <div class="col-12 bg-grey flex align-center justify-center ">
+      <span>水平对齐</span>
+    </div>
+    <div class="flex justify-start">
+      <div class="bg-grey col-lg-2">justify-start</div>
+    </div>
+    <div class="flex justify-center">
+      <div class=" bg-grey col-lg-2">justify-center</div>
+    </div>
+    <div class="flex justify-end">
+      <div class="bg-grey col-lg-2">justify-end</div>
+    </div>
+    <div class="flex justify-between">
+      <div class="bg-grey col-lg-2">justify-between</div>
+      <div class="bg-grey col-lg-2">justify-between</div>
+    </div>
+    <div class="flex justify-around">
+      <div class="bg-grey col-lg-2">justify-around</div>
+      <div class="bg-grey col-lg-2">justify-around</div>
+    </div>
+
+    <!-- 垂直对齐 -->
+    <div class="col-12 bg-grey flex align-center justify-center ">
+      <span>垂直对齐</span>
+    </div>
+
+    <div style="height: 20vh" class="flex align-start">
+      <div class="bg-grey col-lg-2">align-start</div>
+    </div>
+    <br>
+    <div style="height: 20vh" class="flex align-center">
+      <div class="bg-grey col-lg-2">align-center</div>
+    </div>
+    <br>
+    <div style="height: 20vh" class="flex align-end">
+      <div class="bg-grey col-lg-2">align-end</div>
+    </div>
+
+
+  </div>
+
+  <div style="height: 20vh"></div>
+</body>
+</html>
