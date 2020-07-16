@@ -7,91 +7,177 @@
     *{
       margin: 0;
     }
-    .bg-grey{
+    .bg-blue{
       background-color: #4d7ed6;
       height: 60px;
-      margin:10px;
     }
     div{
       color: white;
     }
-    .flex{
+    .flex,.bg-wathet{
       background-color: #c9d7f1;
+    }
+    .flex,.margin-10px{
+      margin: 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <!-- 固定尺寸  -->
-    <div class="col-12 bg-grey flex align-center justify-center ">
+    <div class="col-12 bg-blue flex align-center justify-center ">
       <span>固定尺寸</span>
     </div>
     <div class="flex">
-      <div class="basis-xs bg-grey">basis-xs</div>
+      <div class="basis-xs bg-blue">basis-xs</div>
     </div>
     <div class="flex">
-      <div class="basis-sm bg-grey">basis-sm</div>
+      <div class="basis-sm bg-blue">basis-sm</div>
     </div>
     <div class="flex">
-      <div class="basis-df bg-grey">basis-df / basis</div>
+      <div class="basis-df bg-blue">basis-df / basis</div>
     </div>
      <div class="flex">
-      <div class="basis-lg bg-grey">basis-lg</div>
+      <div class="basis-lg bg-blue">basis-lg</div>
     </div>
      <div class="flex">
-      <div class="basis-xl bg-grey">basis-xl</div>
+      <div class="basis-xl bg-blue">basis-xl</div>
     </div>
-
+    <br>
     <!-- 比例布局 -->
-    <div class="col-12 bg-grey flex align-center justify-center ">
+    <div class="col-12 bg-blue flex align-center justify-center ">
       <span>比例布局</span>
     </div>
     <div class="flex">
-      <div class="flex-sub bg-grey">flex-sub</div>
-      <div class="flex-twice bg-grey">flex-twice</div>
-      <div class="flex-treble bg-grey">flex-treble</div>
+      <div class="flex-sub bg-blue">flex-sub</div>
+      <div class="flex-twice bg-blue">flex-twice</div>
+      <div class="flex-treble bg-blue">flex-treble</div>
     </div>
-
+    <br>
     <!-- 水平对齐 -->
-    <div class="col-12 bg-grey flex align-center justify-center ">
+    <div class="col-12 bg-blue flex align-center justify-center ">
       <span>水平对齐</span>
     </div>
     <div class="flex justify-start">
-      <div class="bg-grey col-lg-2">justify-start</div>
+      <div class="bg-blue col-lg-2">justify-start</div>
     </div>
     <div class="flex justify-center">
-      <div class=" bg-grey col-lg-2">justify-center</div>
+      <div class=" bg-blue col-lg-2">justify-center</div>
     </div>
     <div class="flex justify-end">
-      <div class="bg-grey col-lg-2">justify-end</div>
+      <div class="bg-blue col-lg-2">justify-end</div>
     </div>
     <div class="flex justify-between">
-      <div class="bg-grey col-lg-2">justify-between</div>
-      <div class="bg-grey col-lg-2">justify-between</div>
+      <div class="bg-blue col-lg-2">justify-between</div>
+      <div class="bg-blue col-lg-2">justify-between</div>
     </div>
     <div class="flex justify-around">
-      <div class="bg-grey col-lg-2">justify-around</div>
-      <div class="bg-grey col-lg-2">justify-around</div>
+      <div class="bg-blue col-lg-2">justify-around</div>
+      <div class="bg-blue col-lg-2">justify-around</div>
     </div>
-
+    <br>
     <!-- 垂直对齐 -->
-    <div class="col-12 bg-grey flex align-center justify-center ">
+    <div class="col-12 bg-blue flex align-center justify-center ">
       <span>垂直对齐</span>
     </div>
 
     <div style="height: 20vh" class="flex align-start">
-      <div class="bg-grey col-lg-2">align-start</div>
+      <div class="bg-blue col-lg-2">align-start</div>
     </div>
     <br>
     <div style="height: 20vh" class="flex align-center">
-      <div class="bg-grey col-lg-2">align-center</div>
+      <div class="bg-blue col-lg-2">align-center</div>
     </div>
     <br>
     <div style="height: 20vh" class="flex align-end">
-      <div class="bg-grey col-lg-2">align-end</div>
+      <div class="bg-blue col-lg-2">align-end</div>
+    </div>
+    <br>
+    <!-- 宫格布局 -->
+    <div class="col-12 bg-blue flex align-center justify-center ">
+      <span>宫格布局</span>
+    </div>
+    <p style="color: grey;" class="margin-10px">单宫格</p>
+    <div class="grid-1 bg-wathet margin-10px">
+      <div class="col bg-blue">.grid-1 col</div>
+    </div>
+    <p style="color: grey;" class="margin-10px">四宫格</p>
+     <div class="grid-2 bg-wathet margin-10px">
+      <div class="col bg-blue">.grid-2 col</div>
+      <div class="col bg-blue">.grid-2 col</div>
+      <div class="col bg-blue">.grid-2 col</div>
+      <div class="col bg-blue">.grid-2 col</div>
+    </div>
+    <p style="color: grey;" class="margin-10px">九宫格，最多可至25宫格</p>
+    <div class="grid-3 bg-wathet margin-10px">
+      <div class="col bg-blue">.grid-3 col</div>
+      <div class="col bg-blue">.grid-3 col</div>
+      <div class="col bg-blue">.grid-3 col</div>
+      <div class="col bg-blue">.grid-3 col</div>
+      <div class="col bg-blue">.grid-3 col</div>
+      <div class="col bg-blue">.grid-3 col</div>
+      <div class="col bg-blue">.grid-3 col</div>
+      <div class="col bg-blue">.grid-3 col</div>
+      <div class="col bg-blue">.grid-3 col</div>
     </div>
 
+    <!-- 文字工具类 -->
+    <div class="col-12 bg-blue flex align-center justify-center ">
+      <span>文字工具类</span>
+    </div>
+    <div class="text-left margin-10px">
+      <span class="bg-blue"> 文字左对齐 .text-left </span>
+    </div>
+    <div class="text-center margin-10px">
+      <span class="bg-blue"> 文字居中 .text-center </span>
+    </div>
+    <div class="text-right margin-10px">
+      <span class="bg-blue"> 文字右对齐 .text-right </span>
+    </div>
 
+    <div class="bg-blue margin-10px" style="height: auto;">
+      <span class="text-xs">.text-xs</span>
+      <span class="text-sm">.text-sm</span>
+      <span class="text-df">.text-df</span>
+      <span class="text-lg">.text-lg</span>
+      <span class="text-xl">.text-xl</span>
+      <span class="text-xxl">.text-xxl</span>
+      <span class="text-sl">.text-sl</span>
+      <span class="text-xsl">.text-xsl</span>
+    </div>
+
+    <div class="bg-wathet flex">
+      <div class="bg-blue text-cut" style="width: 300px;">文字截断：Colorful CSS 魔改自Colorful UI 和 Bootstrap</div>
+      <div class="bg-blue text-df margin-left-xs" style="width: 300px;">
+      .text-price-RMB <span class="text-price-RMB"></span>30</div>
+      <div class="bg-blue text-df margin-left-xs" style="width: 300px;">
+      .text-price-USD <span class="text-price-USD"></span>30</div>
+      <div class="bg-blue text-df margin-left-xs text-Abc" style="width: 300px;">
+        首字母大写 .text-Abc
+      </div>
+      <div class="bg-blue text-df margin-left-xs text-ABC" style="width: 300px;">
+        字母大写 .text-Abc
+      </div>
+      <div class="bg-blue text-df margin-left-xs text-abc" style="width: 300px;">
+        字母小写 .text-Abc
+      </div>
+    </div>
+     <!-- 辅助布局类 -->
+    <div class="col-12 bg-blue flex align-center justify-center ">
+      <span>辅助布局类</span>
+    </div>
+    <div class="text-right margin-10px">
+      <span class="bg-blue pull-left"> 左浮动 .pull-left/.fl</span>
+      <span class="bg-blue pull-right"> 左浮动 .pull-right/.fr</span>
+    </div>
+    <p style="color: grey;" class="margin-10px clearfix">.margin .margin-left .margin-right .margin-top .margin-bottom .margin-tb .margin-lr 都有 xs sm df lg xl尺寸</p>
+
+    <div class="margin-10px bg-wathet" style="height: 100px;">
+      <div class=" bg-blue" style="margin:400px;height:40px;"></div>
+    </div>
+    <div class="margin-10px bg-wathet">
+      <div class="margin-sm bg-blue"></div>
+    </div>
   </div>
 
   <div style="height: 20vh"></div>
